@@ -1,0 +1,385 @@
+
+:root {
+    /* Paleta de Cores */
+    --azul-profundo: #0A3D62;
+    --azul-turquesa: #1EBBD7;
+    --branco-areia: #F5F0E1;
+    --verde-floresta: #2E7D32;
+    --amarelo-suave: #F9E076;
+    --rosa-suave: #E8A4B5;
+    --cinza-claro: #F2F2F2;
+    
+    /* Variações */
+    --azul-profundo-escuro: #072A43;
+    --azul-profundo-claro: #1E5D8C;
+    --azul-turquesa-escuro: #189FB6;
+    --azul-turquesa-claro: #5FCCE0;
+    --verde-floresta-escuro: #1B5E20;
+    --verde-floresta-claro: #43A047;
+    --amarelo-suave-escuro: #F0C419;
+    --amarelo-suave-claro: #FFF0B3;
+    
+    /* Tipografia */
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-corpo: 'Open Sans', sans-serif;
+    
+    /* Espaçamento */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    color: var(--azul-profundo);
+    background-color: var(--branco-areia);
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Botões */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--azul-turquesa);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-turquesa-escuro);
+}
+
+.btn-secondary {
+    display: inline-block;
+    border: 2px solid var(--azul-profundo);
+    color: var(--azul-profundo);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--azul-profundo-claro);
+    color: white;
+}
+
+/* Navegação */
+.navbar {
+    background-color: var(--azul-profundo);
+    color: var(--branco-areia);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--azul-profundo), var(--azul-turquesa));
+    color: white;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-sm);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.highlight {
+    color: var(--azul-turquesa);
+}
+
+/* Seções Gerais */
+section {
+    padding: var(--spacing-xl) 0;
+}
+
+section:nth-child(even) {
+    background-color: white;
+}
+
+/* Cartões */
+.stat-card, .action-card, .step-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover, .action-card:hover, .step-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.stat-card h3 {
+    color: var(--azul-turquesa);
+    font-size: 2rem;
+}
+
+/* Placeholder para imagens */
+.card-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--azul-turquesa), var(--verde-floresta));
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.card-image::before {
+    content: "🌍";
+}
+
+.card-link {
+    color: var(--azul-turquesa);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Step cards específicos */
+.step-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--azul-turquesa);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Grade de Cartões */
+.stats-grid, .actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: var(--azul-profundo);
+    color: var(--branco-areia);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 200px;
+    padding: var(--spacing-sm);
+    border: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--azul-profundo-escuro);
+    color: white;
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--azul-turquesa);
+}
+
+.social-links a {
+    display: inline-block;
+    margin-left: var(--spacing-sm);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--azul-turquesa);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--azul-profundo);
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: block;
+    }
+    
+    .desktop-nav ul {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-md);
+    }
+    
+    .desktop-nav a {
+        color: white;
+        text-decoration: none;
+        padding: var(--spacing-sm);
+    }
+    
+    .desktop-nav a.active, .desktop-nav a:hover {
+        color: var(--azul-turquesa);
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    .steps-container {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--spacing-md);
+    }
+    
+    .step-card {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .step-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+
