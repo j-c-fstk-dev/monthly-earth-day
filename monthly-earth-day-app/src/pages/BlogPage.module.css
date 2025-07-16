@@ -1,0 +1,31 @@
+.blogPageContainer {
+    /* Basic container styles */
+    width: 100%;
+    max-width: 1200px; /* Or your preferred max width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+.latestPostsSection {
+    padding: 40px 0; /* Add vertical padding */
+    margin-top: 20px; /* Space from the hero section */
+}
+
+.latestPostsSection h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.blogPostsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+.blogPostImage {
+    width: 100%; /* Make image fill the card width */
+    height: 200px; /* Fixed height for consistency (adjust as needed) */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+    border-top-left-radius: var(--rounded-lg); /* Apply rounded corners from Card */
+    border-top-right-radius: var(--rounded-lg); /* Apply rounded corners from Card */
+}

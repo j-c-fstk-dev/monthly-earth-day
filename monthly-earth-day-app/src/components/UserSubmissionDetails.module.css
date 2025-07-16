@@ -1,0 +1,75 @@
+.submissionDetailsContainer {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  position: relative;
+  margin-top: 20px; /* Add some spacing if not a modal */
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--dark-gray);
+}
+
+.submissionDetailsContainer h3 {
+  color: var(--dark-green);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.submissionDetailsContainer p {
+  margin-bottom: 15px;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.mediaPlaceholder {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px dashed var(--medium-gray);
+  border-radius: var(--border-radius);
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.actionButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px;
+}
+
+.actionButtons button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.actionButtons .approveButton {
+  background-color: var(--primary-green);
+  color: var(--text-light);
+}
+
+.actionButtons .rejectButton {
+  background-color: #e57373; /* A shade of red for rejection */
+  color: var(--text-light);
+}
+
+.actionButtons .deleteButton {
+  background-color: #ef5350; /* A stronger red for deletion */
+  color: var(--text-light);
+}
+
+.actionButtons button:hover {
+  opacity: 0.9;
+}

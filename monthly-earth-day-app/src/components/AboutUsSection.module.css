@@ -1,0 +1,30 @@
+.aboutUsSection {
+  padding: var(--spacing-xl) 0; /* Apply padding based on UI/UX guidelines */
+  background-color: var(--light-gray); /* Example background color */
+  color: var(--dark-gray); /* Example text color */
+}
+
+.aboutUsSection h2 {
+  font-family: var(--secondary-font); /* Use secondary font for headings */
+  font-size: 2rem; /* Example heading size */
+  margin-bottom: var(--spacing-md); /* Add bottom margin */
+  color: var(--dark-green); /* Use dark green for heading color */
+}
+
+.aboutUsSection p {
+  font-family: var(--primary-font); /* Use primary font for body text */
+  font-size: 1rem; /* Example paragraph size */
+  line-height: 1.5; /* Set line height */
+  margin-bottom: var(--spacing-sm); /* Add bottom margin for paragraphs */
+}
+
+.aboutUsSection p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
+
+/* Add responsive adjustments if needed */
+@media (min-width: 768px) {
+  .aboutUsSection h2 {
+    font-size: 2.5rem; /* Adjust heading size for larger screens */
+  }
+}

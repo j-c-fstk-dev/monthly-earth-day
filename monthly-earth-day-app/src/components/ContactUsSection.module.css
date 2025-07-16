@@ -1,0 +1,19 @@
+.contactUsSection {
+    padding: var(--spacing-xl) 0;
+    /* Add other styling based on your UI/UX for sections */
+}
+
+.contactUsSection h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--dark-green); /* Assuming a dark green for headings */
+}
+
+.contactUsSection p {
+    font-family: var(--fonte-corpo);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-gray); /* Assuming a dark gray for text */
+}

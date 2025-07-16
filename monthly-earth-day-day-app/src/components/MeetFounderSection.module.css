@@ -1,0 +1,24 @@
+.meetFounderSection {
+  padding: var(--spacing-xl) 0;
+  background-color: white; /* Assuming alternating background */
+  color: var(--dark-gray);
+}
+
+.meetFounderSection h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--dark-green);
+  text-align: center;
+}
+
+.meetFounderSection p {
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-sm);
+  max-width: 800px; /* Limit text width for readability */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--spacing-sm); /* Add some horizontal padding */
+}

@@ -1,0 +1,129 @@
+/* Paleta de Cores */
+:root {
+    --azul-profundo: #0A3D62;
+    --azul-turquesa: #1EBBD7;
+    --branco-areia: #F5F0E1;
+    --verde-floresta: #2E7D32;
+    --amarelo-suave: #F9E076;
+    --rosa-suave: #E8A4B5;
+    --cinza-claro: #F2F2F2;
+    
+    /* Variações */
+    --azul-profundo-escuro: #072A43;
+    --azul-profundo-claro: #1E5D8C;
+    --azul-turquesa-escuro: #189FB6;
+    --azul-turquesa-claro: #5FCCE0;
+    --verde-floresta-escuro: #1B5E20;
+    --verde-floresta-claro: #43A047;
+    --amarelo-suave-escuro: #F0C419;
+    --amarelo-suave-claro: #FFF0B3;
+    
+    /* Tipografia */
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-corpo: 'Open Sans', sans-serif;
+    
+    /* Espaçamento */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/* Reset Básico (Can be global or within App) */
+/* Moved to global styles if we were to use a global stylesheet */
+/* For CSS Modules, we apply these to the root element or use a global reset */
+
+/* Body styles (Can be global or within App) */
+/* Moved to global styles or applied to a main wrapper */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Tipografia */
+/* These can be applied globally or to specific elements within components */
+/* For now, applying to the component\'s scope */
+
+.header h1, .section h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Button styles (Can be a separate component or within shared styles) */
+/* .btn-primary, .btn-secondary will likely be separate components */
+
+/* Navigation (Likely a separate component) */
+/* .navbar, .logo, .desktop-nav, .menu-toggle will likely be separate components */
+
+/* Hero Section (Likely a separate component) */
+/* .hero, .hero-content, .hero h1, .highlight will likely be separate components */
+
+/* Seções Gerais */
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.section:nth-child(even) {
+    background-color: white; /* This might need a different approach with CSS Modules or global styles */
+}
+
+/* Cards (Likely separate components) */
+/* .stat-card, .action-card, .step-card, .stat-icon, .stat-card h3, .card-image, .card-image::before, .card-link, .step-icon will likely be separate components */
+
+/* Grid of Cards (Likely applied to containers within sections) */
+/* .stats-grid, .actions-grid can be classes applied to divs within sections */
+
+/* Newsletter (Likely a separate component) */
+/* .newsletter, .newsletter-form, .newsletter-form input will likely be separate components */
+
+/* Footer (Likely a separate component) */
+/* footer, .footer-content, .footer-logo, .footer-links, .footer-links ul, .footer-links a, .social-links a, .copyright will likely be separate components */
+
+/* Responsiveness (Media queries can be included in component CSS Modules or a global file) */
+/* @media (min-width: 768px) { ... } will be applied as needed */
+
+
+/* Basic styles for MainApp component - Adapted to CSS Modules */
+
+.App { /* This class will apply to the main div in MainApp.tsx */
+  font-family: var(--fonte-corpo); /* Using the defined CSS variable */
+  line-height: 1.6;
+  color: var(--azul-profundo); /* Using the defined CSS variable */
+  background-color: var(--branco-areia); /* Using the defined CSS variable */
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+.header { /* This class will apply to the header element */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 { /* Targeting h1 within the header */
+  color: var(--azul-profundo); /* Using the defined CSS variable */
+}
+
+.section { /* Applying to section elements */
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.section h2 { /* Targeting h2 within sections */
+  color: var(--azul-profundo); /* Using the defined CSS variable */
+}

@@ -1,0 +1,54 @@
+.testimonialContainer {
+    background-color: var(--light-gray); /* Using variable from UI/UX */
+    padding: var(--spacing-md); /* Using variable from UI/UX */
+    border-radius: var(--rounded-lg); /* Using variable from UI/UX */
+    box-shadow: var(--shadow-md); /* Using variable from UI/UX */
+    margin-bottom: var(--spacing-md); /* Spacing between testimonials */
+    font-family: var(--fonte-corpo); /* Using variable from UI/UX */
+    color: var(--dark-gray); /* Using variable from UI/UX */
+    position: relative; /* For potential quote icon positioning */
+}
+
+.testimonialQuote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+    font-style: italic; /* Testimonials often use italics */
+}
+
+.testimonialQuote::before {
+    content: "“"; /* Opening quote */
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--primary-green); /* Using primary green for accent */
+    position: absolute;
+    top: var(--spacing-sm);
+    left: var(--spacing-md);
+}
+
+.testimonialQuote::after {
+    content: "”"; /* Closing quote */
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--primary-green); /* Using primary green for accent */
+    position: absolute;
+    bottom: var(--spacing-sm);
+    right: var(--spacing-md);
+}
+
+.testimonialAuthor {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right; /* Align author to the right */
+    color: var(--dark-green); /* Using dark green for emphasis */
+    margin-top: var(--spacing-sm);
+}
+
+/* Optional: Add styling for a potential carousel on the homepage */
+/*
+.testimonialCarousel .testimonialContainer {
+    flex: 0 0 auto;
+    width: 80%; // Adjust width for carousel item
+    margin-right: var(--spacing-md); // Spacing between carousel items
+}
+*/

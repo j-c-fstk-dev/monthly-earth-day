@@ -1,0 +1,62 @@
+.submissionPageContainer {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.submissionForm {
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--spacing-sm);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.formGroup label {
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.submissionForm input[type="file"],
+.submissionForm textarea {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--spacing-sm);
+    font-family: var(--fonte-corpo);
+    color: var(--dark-gray);
+    width: 100%;
+}
+
+.submissionForm input[type="file"] {
+    padding: var(--spacing-sm); /* Adjust padding for file input if needed */
+}
+
+
+.submissionForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submissionForm input[type="file"]:focus,
+.submissionForm textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2); /* Focus ring effect */
+}
+
+.submitButton {
+    align-self: flex-start; /* Align button to the left */
+}
+
+/* Apply button styles from the Button module */
+.submitButton {
+    composes: btn-primary from '../components/Button.module.css'; /* Inherit styles from Button component */
+}

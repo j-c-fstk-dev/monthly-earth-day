@@ -1,0 +1,31 @@
+.heroSection {
+    background: linear-gradient(135deg, var(--azul-profundo), var(--azul-turquesa)); /* Assuming these CSS variables are defined elsewhere or will be replaced */
+    color: var(--text-light); /* Assuming text-light is defined */
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-sm); /* Assuming spacing variables are defined */
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl); /* Add some space below the hero */
+}
+
+.heroSection h1 {
+    color: var(--text-light);
+    font-family: var(--fonte-titulo); /* Assuming fonte-titulo is defined */
+    font-size: 3rem; /* Adjust as needed based on your design system */
+    margin-bottom: var(--spacing-sm); /* Assuming spacing-sm is defined */
+}
+
+.heroSection p {
+    font-family: var(--fonte-corpo); /* Assuming fonte-corpo is defined */
+    font-size: 1.25rem; /* Adjust as needed */
+    margin-bottom: var(--spacing-md); /* Assuming spacing-md is defined */
+}
+
+/* Add responsiveness if needed, similar to your original CSS */
+@media (min-width: 768px) {
+    .heroSection h1 {
+        font-size: 3.5rem;
+    }
+}

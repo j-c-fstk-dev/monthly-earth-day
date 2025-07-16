@@ -1,0 +1,91 @@
+.submissionListContainer {
+  margin-top: 20px;
+}
+
+.submissionItem {
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--spacing-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.submissionInfo {
+  flex-grow: 1;
+  margin-right: var(--spacing-md);
+}
+
+.submissionInfo p {
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.submissionInfo strong {
+  color: var(--dark-green);
+}
+
+.statusIndicator {
+  font-weight: bold;
+  margin-left: var(--spacing-md);
+  padding: 4px 8px; /* Using explicit pixel values for smaller padding */
+  border-radius: var(--border-radius-pill);
+  font-size: 0.8em;
+}
+
+.statusPending { background-color: var(--caution-yellow); color: var(--text-dark); }
+.statusApproved { background-color: var(--primary-green); color: var(--text-light); }
+.statusRejected { background-color: var(--earth-brown); color: var(--text-light); }
+
+.submissionActions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.submissionActions button {
+  padding: 6px 12px; /* Slightly increased padding for better click area */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.submissionActions .viewButton {
+  background-color: var(--ocean-blue);
+  color: var(--text-light);
+}
+
+.submissionActions .viewButton:hover {
+  background-color: #1a7dc3; /* A slightly darker blue */
+}
+
+.submissionActions .approveButton {
+  background-color: var(--primary-green);
+  color: var(--text-light);
+}
+
+.submissionActions .approveButton:hover {
+  background-color: var(--dark-green);
+}
+
+.submissionActions .rejectButton {
+  background-color: var(--earth-brown);
+  color: var(--text-light);
+}
+
+.submissionActions .rejectButton:hover {
+  background-color: #684a3d; /* A slightly darker brown */
+}
+
+.submissionActions .deleteButton {
+  background-color: #e57373; /* Light red */
+  color: var(--text-light);
+}
+
+.submissionActions .deleteButton:hover {
+  background-color: #ef5350; /* Red */
+}

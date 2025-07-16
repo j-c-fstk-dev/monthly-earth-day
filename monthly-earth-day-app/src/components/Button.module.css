@@ -1,0 +1,88 @@
+/* src/components/Button.module.css */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem; /* Adjust padding as needed based on spacing guidelines */
+  font-family: 'Inter', sans-serif; /* Use Inter for body text/buttons */
+  font-size: 1rem;
+  font-weight: 500; /* Medium weight often good for buttons */
+  border: none;
+  border-radius: 9999px; /* Fully rounded */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+  text-decoration: none; /* Ensure it works for links too */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Primary Green with transparency */
+}
+
+/* Primary Variant */
+.primary {
+  background-color: #4CAF50; /* Primary Green */
+  color: #FFFFFF; /* Text Light */
+}
+
+.primary:hover {
+  background-color: #388E3C; /* Darker shade of Primary Green */
+}
+
+.primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Variant */
+.secondary {
+  background-color: #2196F3; /* Ocean Blue */
+  color: #FFFFFF; /* Text Light */
+}
+
+.secondary:hover {
+  background-color: #1976D2; /* Darker shade of Ocean Blue */
+}
+
+.secondary:active {
+  transform: scale(0.98);
+}
+
+/* Outline Variant */
+.outline {
+  background-color: transparent;
+  border: 2px solid #4CAF50; /* Primary Green border */
+  color: #4CAF50; /* Primary Green text */
+  padding: calc(0.75rem - 2px) calc(1.5rem - 2px); /* Adjust padding for border */
+}
+
+.outline:hover {
+  background-color: rgba(76, 175, 80, 0.1); /* Subtle hover with Primary Green */
+  color: #388E3C; /* Darker Primary Green text */
+  border-color: #388E3C;
+}
+
+.outline:active {
+   transform: scale(0.98);
+}
+
+/* Ghost Variant */
+.ghost {
+  background-color: transparent;
+  color: #2E7D32; /* Dark Green text */
+}
+
+.ghost:hover {
+  background-color: #F5F5F5; /* Light Gray */
+  color: #1B5E20; /* Darker Dark Green */
+}
+
+.ghost:active {
+   transform: scale(0.98);
+}
+
+/* Disabled state */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

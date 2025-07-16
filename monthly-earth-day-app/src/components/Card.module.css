@@ -1,0 +1,8 @@
+.card {
+  background-color: var(--light-gray); /* Using CSS variable based on UI/UX */
+  border-radius: var(--spacing-md); /* Using CSS variable for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: var(--spacing-md); /* Example padding, adjust as needed */
+}
+
+/* You might add variations later, e.g., .card-compact, .card-featured */

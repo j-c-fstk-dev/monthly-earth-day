@@ -1,0 +1,15 @@
+/* src/pages/admin/UserSubmissionsPage.module.css */
+
+.adminSubmissionsContainer {
+ padding: 2rem;
+ margin: 0 auto;
+ max-width: 1200px; /* Adjust as needed */
+}
+
+.adminSubmissionsContent {
+ margin-top: 2rem;
+}
+
+.adminSubmissionsContent h2 {
+ color: var(--dark-green); /* Using a color variable from your palette */
+}

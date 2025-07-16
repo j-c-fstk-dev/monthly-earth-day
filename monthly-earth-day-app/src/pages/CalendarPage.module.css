@@ -1,0 +1,57 @@
+.calendarPageContainer {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upcomingEventsSection {
+    margin-top: 2rem;
+}
+
+.calendarContainer {
+    margin-bottom: 2rem;
+    /* Optional: Style for centering or adjusting calendar size */
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for event details area */
+.eventDetails {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-top: 1px solid var(--medium-gray); /* Using a variable from your UI/UX */
+}
+
+.eventDetails h3 {
+    color: var(--dark-green); /* Using a variable from your UI/UX */
+    margin-bottom: 0.5rem;
+}
+
+.eventDetails p {
+    margin-bottom: 0.5rem;
+}
+
+.eventDetails ul {
+    list-style: none;
+    padding: 0;
+}
+
+.eventDetails li {
+    background-color: var(--light-gray); /* Using a variable from your UI/UX */
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--medium-gray);
+}
+
+/* Basic styling for react-calendar tiles with events */
+/* You might need to inspect the react-calendar DOM to target specific tile elements */
+.calendarContainer .react-calendar__tile--hasActive {
+    background-color: var(--secondary-green); /* Example highlight color */
+    color: var(--text-light);
+}
+
+.calendarContainer .react-calendar__tile--now {
+    background-color: var(--ocean-blue); /* Example highlight color for today */
+    color: var(--text-light);
+}

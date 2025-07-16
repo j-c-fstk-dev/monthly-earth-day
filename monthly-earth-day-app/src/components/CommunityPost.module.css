@@ -1,0 +1,42 @@
+.communityPostContainer {
+    background-color: var(--light-gray);
+    border-radius: var(--spacing-sm);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: var(--fonte-corpo);
+}
+
+.postAuthor {
+    font-weight: bold;
+    color: var(--dark-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.postContent {
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-gray);
+}
+
+.postMedia {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    display: block; /* Ensures image is on its own line */
+}
+
+.postActions {
+    display: flex;
+    align-items: center;
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+}
+
+.postActions span {
+    margin-right: var(--spacing-md);
+}
+
+.postActions i {
+    margin-right: var(--spacing-xs);
+}
